@@ -1,0 +1,174 @@
+body{
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:$color-main;
+    
+}
+
+
+.heading-primary{
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    @media(max-width:992px) {
+                margin-top: 10px
+    }
+    &--main{
+        display: block;
+        font-weight: 400;
+        letter-spacing: 5px;
+        font-size: 30px;
+        margin-bottom: 2.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        @media (max-width:767px){
+                font-size: 12px;
+                letter-spacing: 2px;
+                font-weight: 700
+        }
+
+    }
+
+    &--sub{
+        display: block;
+        font-weight: 400;
+        letter-spacing: 6px;
+        font-size: 24px;
+        margin-bottom: 5rem;
+        animation: moveInRight 1s ease-out ;
+        @media (max-width:767px){
+                font-size: 10px;
+                letter-spacing: 2px;
+                font-weight: 700
+        }
+        span{
+            color: $color-white;
+        }
+
+
+     
+    }
+}
+
+.heading-secondry {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+}
+.primary-heading{
+    letter-spacing: 7px;
+    margin-bottom: 50px;
+    @media(width:411px){
+            font-size: 20px;
+            letter-spacing: 2.7px
+    }
+     @media (width:320px){
+         letter-spacing: 4px       
+    }
+    @media(width:375px){
+       letter-spacing: 2px;
+       font-size: 20px
+    }
+}
+.prim-heading{
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+
+
+}
+.content{
+    background-color: rgba(255, 255, 255, 0.2);
+    background-color: red;
+    .paragraph{
+        margin-bottom: 20px;
+    }
+}
+
+.events{
+    font-size: 16px;
+    line-height: 1.42857143;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+}
+.section-book{
+    h2{
+        padding: 0;
+        margin:0
+    }
+}
+.marker{
+    font-size: 2.5rem;
+    letter-spacing: 3px
+}
+@media (max-width:767px){
+    h1{
+        font-size: 30px
+    }
+    .paragraph{
+        font-size: 13px;
+        line-height: 2;
+         @media (width:320px){
+                font-size: 10px;
+                line-height: 2.5;
+        }
+    }
+}
+@media(max-width:416px){
+    .section-copy{
+        .paragraph{
+            font-size: 7px
+        }
+    
+    }
+
+}
+
+
+ @media (width:320px){
+        h1{
+            font-size: 20px
+        }        
+}
+.section-stories{
+    .primary-heading{
+        
+        @media(width:600px){
+            letter-spacing: 3px
+        }
+        
+    }
+}
+.section-copy{
+    .paragraph{
+        @media(max-width:767px){
+            font-size: 7px;
+            margin-bottom: 0
+            
+        }
+        @media(width:769px) {
+            font-size: 12px;
+            margin-bottom: 0
+        }
+    }
+}
+
+
+
+
+

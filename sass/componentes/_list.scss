@@ -1,0 +1,89 @@
+ul.list{
+   
+        list-style: none;
+            @media (max-width:992px) {
+                font-size: 13px;
+                line-height: 26px
+            }
+            @media(width:320px){
+                font-size: 11px;
+        
+           } 
+        li{
+            display: inline-block;
+            margin-bottom: 1rem
+        }
+    }
+.diamond{
+    ul.list{
+        li.dia{
+            position: absolute;
+            top: 22px;
+            left: 110px;
+            font-weight: 400;
+            line-height: 1.7;
+            margin-bottom: 0;
+            @media (max-width:767px){
+                display: none
+            }
+
+        }
+    }
+    
+}
+
+ul.pargraph{
+    li{
+        margin-left: 95px;
+        margin-top: -10px;
+        @media(max-width:767px){
+            margin-left: 0;
+        } 
+    }
+ 
+
+}
+ul.personal-info{
+    li{
+        display: block
+    }
+}
+ul.social{
+    margin-top: 3rem;
+    @media (max-width:767px){
+        margin-bottom: 30px
+    }
+}
+.social{
+    li{
+        font-size: 14px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        color: $color-white;
+        background-color: transparent;
+        border-radius: 0;
+        border: 1px solid #378CCD;
+        cursor: pointer;
+        margin-right: 17px;
+        &:hover{
+
+            background-image:  linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+            border:1px solid $color-main;
+            color:$color-white;
+            
+        }
+    }
+}
+ul.first{
+    margin-top: -1rem;
+    li{
+        @media (max-width:1200px) {
+            margin-top: -2.4rem;
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+    
+}

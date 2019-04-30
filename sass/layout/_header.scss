@@ -1,0 +1,136 @@
+.header{ 
+
+    height: 95vh;
+    //background-color: #04202a;
+    background-image:  linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../img/hotel.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+        color: $color-white;
+        font-size: 2.5rem;
+        @media (min-width:992px) and (max-width : 1200px){
+				display: none
+		}
+        @media (max-width:767px){
+            top: 7rem;
+            left: 21rem;
+            letter-spacing: 7px;
+        }
+        @media(width:769px){
+            display: none
+        }
+        @media(width:600px){
+            left: 30rem;
+            top: 10rem
+        }
+        @media(min-width:411px) and (max-width:416px){
+            left: 18rem;
+            top: 7rem
+        }
+        @media(width:375px){
+            left: 15rem
+        }
+        @media(width:320px){
+            left: 12rem
+        }
+    }
+    &__logo-content{
+        position: absolute;
+        top: 5rem;
+        left: 52rem;
+
+            @media (min-width:1100px) and (max-width : 1200px){
+                left: 50rem
+            }
+            @media (min-width:992px) and (max-width : 1100px){
+				left: 39rem
+			}
+            @media(width:769px){
+                left: 33rem
+            }
+
+            @media(max-width:768px){
+                left: 39rem
+            }
+            @media (max-width:767px){
+                display: none
+            }
+      
+        h4{
+            color: $color-white;
+            margin-top: 10px;
+            letter-spacing: 5px;
+        }
+    }
+    &__text-box{
+        position: absolute;
+        top:37%;
+        left:30%;
+            @media (min-width:992px) and (max-width : 1200px){
+				left: 25%;
+                top:33%
+			}
+				
+			@media (min-width:768px) and (max-width : 991px){
+				left: 12%
+			}
+            @media (max-width:767px){
+                top: 27%;
+                left: 25%
+            }
+            @media(width:600px){
+                left: 20%;
+                top: 37%;
+            }
+            @media(min-width:411px) and (max-width:416px){
+                left: 4%
+            }
+            
+            @media(width:375px){
+            left: 0%
+            }
+            @media (width:320px){
+                left: 5%
+            }
+            
+}
+    &__arrows{
+        position:absolute;
+        text-align:center;
+        bottom:4rem;
+        left:4rem;
+        width:100%;
+        padding:40px 0;
+            @media (min-width:1100px) and (max-width : 1200px){
+                left: -4.5rem
+            }
+            @media (max-width: 1200px){
+                bottom: -2rem;
+                left: 2rem
+            }
+
+            @media (max-width: 992px){
+                left: 2rem
+            }
+            @media(width:375px){
+                left: -1rem;
+                bottom: 0;
+            }
+        & i{
+            border:2px solid $color-main;
+            border-radius:50%;
+            height:40px;
+            width:40px;
+            line-height:32px;
+            cursor:pointer
+        }
+    }
+
+
+}

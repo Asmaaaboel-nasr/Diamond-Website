@@ -1,0 +1,15 @@
+{
+  "name": "diamond",
+  "version": "1.0.0",
+  "description": "it's a responsive hotel website by using html sass jquery and media queries",
+  "main": "index.js",
+ 
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "asmaa helmy",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
